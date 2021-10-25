@@ -1,5 +1,53 @@
 .App {
+  left: 45%;
+  top: 17%;
+  position: absolute;
+}
+
+body {
+  background: url('images/background.jpg');
+  background-size: cover !important;
+  background-repeat: no-repeat;
+}
+
+.main-header {
   text-align: center;
+  color: darkblue;
+  font-size: 50px;
+}
+
+.list-container {
+  padding: 0;
+}
+
+.list-item {
+  list-style: none;
+  background: white;
+  padding: 12px;
+  margin-top: 5px;
+}
+
+.icons {
+  float: right;
+  cursor: pointer;
+}
+
+.item-completed {
+  text-decoration: line-through;
+  color: gray;
+  background: #b7b3b3;
+}
+
+.submit-button {
+  position: relative;
+  top: 8px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.submit-icon {
+  width: 30px !important;
+  height: 25px;
 }
 
 .App-logo {
@@ -32,6 +80,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
