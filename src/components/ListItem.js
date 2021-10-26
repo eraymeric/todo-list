@@ -21,7 +21,7 @@ function ListItem({item, name, index, todo, setTodo}) {
 
     console.log(todo);
 
-    localStorage.setItem('item-collection', JSON.stringify(todo));
+    localStorage.setItem('item-collection', JSON.stringify(todo)); // bu code her render işleminde tekrar tekrar her bir liste elemanı için çalışır. Bunun yerine listede değişiklik olduğu zamanlarda çalıştırmalısın (ekleme, silme)
 
     return (
         <li className={`list-item ${item.isCompleted ? 'item-completed' : ''}`} index={index}>{name} 
@@ -32,3 +32,10 @@ function ListItem({item, name, index, todo, setTodo}) {
 }
 
 export default ListItem
+
+/**
+ *  li elementine verdiğin index propertisi nedir?
+ *   
+ *   Bu componetin dışarıdan sadece item, onComplete, onDelete propertylerini alması lazım.
+ *   todo listesi bu componenti ilgilendirmez.
+ */

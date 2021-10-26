@@ -26,3 +26,21 @@ function DataInput({input, setInput, todo, setTodo}) {
 }
 
 export default DataInput
+
+/**
+ * 1) Madem butonu ile birlikte bir input componenti yaptın, o zaman inputun state ini duşarıdan almana gerek yok. 
+ *    Çünkü componentin amacı butona tıklandığında inputun içindeki değeri bildirmek.
+ * 
+ * 2) Componentlerin ne zaman, nerede, neden kullanılacağını bilemezsin.
+ *    Bu yüzden todo listesini dışarıdan almamalısın. Bu componentin todo listesi ile bir işi yok.
+ * 
+ * 3) Buradaki componenti bir form elementine dönüştürmemelisin. 
+ *    Eğer bu bu componenti ileride alıp bir formun içinde kullanmaya çalışırsan hata alırsın.
+ *    Bunun yerine butonun onClick eventini dinlemelisin.
+ * 
+ * 4) parseInt(Math.random() * 100) işlemini dışarıda util diye bir js dosyasına yaşımalısın ki ileride tekrar tekrar kullanabil.
+ * 
+ * Bu componentin sadece butona tıklandığında inputun içindeki stringi dışarı gönderecek örneğin "onSet" diye bir propertysi olması lazım.
+ * 
+ * 
+ */
