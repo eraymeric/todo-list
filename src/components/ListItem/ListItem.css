@@ -1,0 +1,17 @@
+.list-item {
+    list-style: none;
+    background: white;
+    padding: 12px;
+    margin-top: 5px;
+  }
+  
+  .icons {
+    float: right;
+    cursor: pointer;
+  }
+  
+  .item-completed {
+    text-decoration: line-through;
+    color: gray;
+    background: #b7b3b3;
+  }
